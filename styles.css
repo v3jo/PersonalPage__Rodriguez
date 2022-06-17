@@ -298,6 +298,11 @@ color: #4c5daa;
   max-width: 80%;
 }
 
+/*animacion-para-index-*/
+.about__img:hover{
+  transform:scaleX(1.1);
+  transition: 2s;
+}
 /*Para-la-pagina-hobbie*/
 .about__hobbie{
  text-align: center;

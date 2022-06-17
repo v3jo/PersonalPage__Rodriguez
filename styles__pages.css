@@ -190,6 +190,14 @@ body{
   border-radius: 20px;
 }
 
+/*Animaciones-para-about*/
+.about__imagen:hover{
+  box-shadow:10px 10px 10px 0px rgba(58, 127, 255, 0.336);
+  border-radius: 20px;
+  transform:scaleX(1.1);
+  transition: 1s;
+  }
+  
 /*footer-conservo-el-footer-del-index*/
 
 .footer{
