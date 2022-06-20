@@ -5,27 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Rodriguez-German-Personal-page</title>
-    <link rel="stylesheet" href="styles__pages.css">
-    <script src="https://kit.fontawesome.com/4c4a74dfb9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-   <!--Cabecera-->
-<!--Navegador-->
-    <nav class="nav" id="nav__id">
-        <div class="nav__logo">
-            <a href="index.html">
-                <img src="assets/alune.png" alt="Icono-pagina" class="nav__img">
+<nav class="navbar navbar-expand-lg navbar-dark" id="botonera__pages">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="../assets/alune.png" alt="Icono-pagina" class="nav__img">
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav__link nav-link active" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Sobre mi</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Desplegar
             </a>
-        </div>
-
-        <ul class="nav__links" id="nav__links">
-            <li><a href="index.html" class="nav__link " id="inicio">Inicio</a></li>
-            <li><a href="about.html" class="nav__link" id="about">Sobre mi</a></li>
-            <li><a href="proyects.html" class="nav__link">Proyectos</a></li>
-            <li><a href="hobbie.html" class="nav__link">Hobbie</a></li>
-            <li><a href="contact.html" class="nav__link ">Contacto</a></li>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="proyects.html">Proyectos</a></li>
+              <li><a class="dropdown-item" href="hobbie.html">Hobbie</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="contact.html">Contacto</a></li>
+            </ul>
+          </li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
+
+
     <header class="header" id="header">
         <h1 class="header__title">Proyectos</h1>
     </header>
@@ -34,7 +50,7 @@
            <div class="container">
                <div class="proyects__grid">
                    <article class="proyects__item">
-                       <img src="assets/imagen1.JPG" alt="Primera-pagina-web" class="proyects__img">
+                       <img src="../assets/imagen1.JPG" alt="Primera-pagina-web" class="proyects__img">
                        <div class="proyects__hover">
                            <h2 class="proyects__title">Proyecto</h2>
                            <i class="fa-solid fa-arrow-up-right-from-square proyects__icon"></i>
@@ -42,7 +58,7 @@
                    </article>
 
                    <article class="proyects__item">
-                    <img src="assets/imagen2.png" alt="imagen-recreativa" class="proyects__img">
+                    <img src="../assets/imagen2.png" alt="imagen-recreativa" class="proyects__img">
                     <div class="proyects__hover">
                         <h2 class="proyects__title">Proyecto</h2>
                         <i class="fa-solid fa-arrow-up-right-from-square proyects__icon"></i>
@@ -50,7 +66,7 @@
                 </article>
 
                 <article class="proyects__item">
-                    <img src="assets/imagen3.jpg" alt="imagen-recreativa" class="proyects__img">
+                    <img src="../assets/imagen3.jpg" alt="imagen-recreativa" class="proyects__img">
                     <div class="proyects__hover">
                         <h2 class="proyects__title">Proyecto</h2>
                         <i class="fa-solid fa-arrow-up-right-from-square proyects__icon"></i>
@@ -58,7 +74,7 @@
                 </article>
 
                 <article class="proyects__item">
-                    <img src="assets/imagen4.jpg" alt="imagen-recreativa" class="proyects__img">
+                    <img src="../assets/imagen4.jpg" alt="imagen-recreativa" class="proyects__img">
                     <div class="proyects__hover">
                         <h2 class="proyects__title">Proyecto</h2>
                         <i class="fa-solid fa-arrow-up-right-from-square proyects__icon"></i>
@@ -66,7 +82,7 @@
                 </article>
 
                 <article class="proyects__item">
-                    <img src="assets/imagen5.jpg" alt="imagen-recreativa" class="proyects__img">
+                    <img src="../assets/imagen5.jpg" alt="imagen-recreativa" class="proyects__img">
                     <div class="proyects__hover">
                         <h2 class="proyects__title">Proyecto</h2>
                         <i class="fa-solid fa-arrow-up-right-from-square proyects__icon"></i>
@@ -83,7 +99,7 @@
     <div class="container footer__grid" id="pie">
         <!--Nav-del-pie-->
         <nav class="nav nav--footer" id="pie__grid">
-            <a href="index.html" class="nav__items">Inicio</a>
+            <a href="../index.html" class="nav__items">Inicio</a>
             <a href="about.html" class="nav__items">Sobre mi</a>
             <a href="proyects.html" class="nav__items">Proyectos</a>
             <a href="hobbie.html" class="nav__items">Hobbie</a>
@@ -107,5 +123,10 @@
         </section>
     </div>
    </footer>
+
+   <!--Font-Awesome-->
+   <script src="https://kit.fontawesome.com/4c4a74dfb9.js" crossorigin="anonymous"></script>
+   <!--BS-->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
