@@ -146,6 +146,7 @@ grid-area: main;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(2,1fr);
   }
+  
 }
 @media only screen and (max-width:580px){
   body{
@@ -180,6 +181,27 @@ grid-area: main;
     grid-template-rows: repeat(2,1fr);
   }
 
+#centro__id .proyects__grid{
+  grid-template-areas: 
+  "img1 img1 img2 img2"
+  "img1 img1 img3 img3"
+  "img4 img4 img5 img5"
+  ;
+}
+
+#hero .hero__texts{
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+#hero .hero__title{
+  font-size: 2.5rem;
+}
+
+#hero .hero__subtitle{
+  font-size: 1.5rem;
+  margin-right: 30rem;
+}
 
 }
 
