@@ -1,12 +1,5 @@
-@charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-:root {
-  --background:linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
-  --color-primary:#667eea;
-  --color-secondary:#764ba2;
-}
-
 /*Funciones-generales-para-uso*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -186,72 +179,8 @@ body {
 
 /*footer*/
 .footer {
-  background: var(--color-primary);
+  background: #667eea;
   margin-top: 20px;
-}
-
-/*nav-footer*/
-.nav--footer {
-  font-weight: 300;
-  justify-content: flex-start;
-}
-
-.nav__items {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
-  padding: 10px 15px;
-  font-weight: inherit;
-  scroll-behavior: smooth;
-}
-.nav__items:hover {
-  color: rgba(228, 233, 255, 0.4941176471);
-}
-
-.footer__grid {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 10rem;
-  align-items: center;
-}
-
-/*redes-sociales-footer*/
-.footer__title {
-  font-weight: 400;
-  color: white;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.footer__icons {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.footer__container-icons {
-  display: inline-block;
-  width: 70px;
-  height: 70px;
-  color: white;
-  text-align: center;
-  border: 1px solid white;
-  border-radius: 50%;
-  line-height: 70px;
-}
-.footer__container-icons:hover {
-  color: rgba(228, 233, 255, 0.4941176471);
-}
-
-.footer__icon {
-  color: inherit;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-/*Para las otras pages a continuación conservando un poco lo principal*/
-.footer {
-  background: var(--color-primary);
 }
 
 /*nav-footer*/
@@ -351,7 +280,7 @@ body {
 /* header-index*/
 .hero {
   height: 100vh;
-  background-image: var(--background), url(../assets/phel.jpg);
+  background-image: linear-gradient(135deg, rgba(102, 126, 234, 0.4941176471) 0%, rgba(118, 75, 162, 0.5960784314) 100%), url(../assets/phel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -362,7 +291,7 @@ body {
 /*header-hobbie*/
 .hero__hobbie {
   height: 100vh;
-  background-image: var(--background), url(../assets/corejj.jpg);
+  background-image: linear-gradient(135deg, rgba(102, 126, 234, 0.4941176471) 0%, rgba(118, 75, 162, 0.5960784314) 100%), url(../assets/corejj.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -443,7 +372,7 @@ body {
 }
 
 .presentation__titule {
-  color: var(--color-primary);
+  color: #667eea;
   margin-bottom: 20px;
 }
 
@@ -458,7 +387,7 @@ body {
 
 .presentation__parrafo--cta {
   text-decoration: none;
-  color: var(--color-primary);
+  color: #667eea;
   font-weight: bold;
 }
 
@@ -469,7 +398,7 @@ body {
 .presentation__button {
   display: inline-block;
   margin-top: 30px;
-  background: var(--color-primary);
+  background: #667eea;
   text-decoration: none;
   color: white;
   padding: 20px 40px;
@@ -489,7 +418,7 @@ body {
 }
 
 .about__titule {
-  color: var(--color-primary);
+  color: #667eea;
   margin-bottom: 20px;
 }
 
@@ -538,14 +467,14 @@ body {
 }
 
 .about__titulo {
-  color: var(--color-primary);
+  color: #667eea;
   text-align: center;
 }
 
 .header__title {
   text-align: center;
   font-size: 3.2rem;
-  color: var(--color-primary);
+  color: #667eea;
 }
 
 /*Tabla-hecha-con-grid*/
@@ -626,7 +555,7 @@ body {
   text-align: center;
   margin: 10px 0;
   font-weight: 800;
-  color: var(--color-primary);
+  color: #667eea;
 }
 
 form {
@@ -652,7 +581,7 @@ form {
   margin: 10px 0 10px 0;
   width: 100%;
   border: none;
-  border-bottom: 1px solid var(--color-primary);
+  border-bottom: 1px solid #667eea;
   resize: none;
 }
 
@@ -662,11 +591,11 @@ form {
 }
 
 .input__form:focus ~ label, .grupo__textarea:focus ~ label {
-  color: var(--color-primary);
+  color: #667eea;
 }
 
 .btn {
-  background: var(--color-primary);
+  background: #667eea;
   display: block;
   width: 100px;
   height: 40px;
