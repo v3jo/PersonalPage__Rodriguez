@@ -1,0 +1,409 @@
+@import "_vars";
+@import "_functions";
+@import "_fonts";
+@import "_media";
+@import "_navBar";
+@import "_footer";
+
+
+/*id-media-index*/
+
+#header {
+  grid-area: header;
+}
+
+#centro {
+  grid-area: main;
+}
+
+#pie {
+  grid-area: footer;
+}
+
+/*id-media-pages*/
+
+#nav__id {
+  grid-area: nav;
+}
+
+#header {
+  grid-area: header;
+}
+
+#centro__id {
+  grid-area: main;
+}
+
+#pie {
+  grid-area: pie;
+}
+
+#pie__nav {
+  grid-area: pie__nav;
+}
+
+/*end-id-media-pages*/
+
+/* header-index*/
+
+.hero {
+  height: 100vh;
+  background-image: $background, url(../assets/phel.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+/*header-hobbie*/
+
+.hero__hobbie {
+  height: 100vh;
+  background-image: $background, url(../assets/corejj.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.hero .container .hero__hobbie {
+  padding: 0;
+}
+
+.hero__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero__title--hobbie {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 3.2rem;
+  margin-left: 7rem;
+}
+
+.hero__subtitle--hobbie {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 7rem;
+}
+/*section-text-header*/
+
+.hero__container {
+  display: flex;
+  height: calc(100vh - 100px);
+  align-items: center;
+  color: #ffff;
+}
+
+.hero__texts {
+  width: 80%;
+  margin-bottom: 50px;
+}
+
+.hero__title {
+  font-size: 3.2rem;
+}
+
+.hero__subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-left: 7rem;
+}
+
+/*Efecto-wave:Recurso-externo*/
+
+.hero__wave {
+  position: absolute;
+  position: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+}
+
+/*about*/
+/*Primera-section*/
+
+.presentation {
+  text-align: center;
+  margin-top: 10px;
+  padding-top: 0;
+}
+
+.presentation__picture {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.presentation__titule {
+  color: $color-primario;
+  margin-bottom: 20px;
+}
+
+.presentation__parrafo {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.presentation__parrafo--bold {
+  font-weight: bold;
+}
+
+.presentation__parrafo--cta {
+  text-decoration: none;
+  color: $color-primario;
+  font-weight: bold;
+}
+
+.presentation--cta:hover {
+  color: #4c5daa;
+}
+
+.presentation__button {
+  display: inline-block;
+  margin-top: 30px;
+  background: $color-primario;
+  text-decoration: none;
+  color: #ffff;
+  padding: 20px 40px;
+  border-radius: 40px;
+
+  &:hover {
+    color: #e4e9ff7e;
+  }
+}
+
+/*Segunda-section*/
+
+.about {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.about__titule {
+  color: $color-primario;
+  margin-bottom: 20px;
+}
+
+.about__parrafo {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.about__parrafo--bold {
+  font-weight: bold;
+}
+
+.about__figure {
+  text-align: center;
+}
+
+.about__img {
+  max-width: 80%;
+
+  &:hover {
+    transform: scaleX(1.1);
+    transition: 2s;
+  }
+}
+
+/*animacion-para-index-*/
+/*Para-la-pagina-hobbie*/
+
+.about__hobbie {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about__instagram {
+  width: 90%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 30px 0 0;
+}
+
+.about__twitter {
+  width: 90%;
+  height: auto;
+  margin: 0 30px 0 0;
+}
+
+.about__titulo {
+  color: $color-primario;
+  text-align: center;
+}
+
+.header__title {
+  text-align: center;
+  font-size: 3.2rem;
+  color:$color-primario;
+}
+
+/*Tabla-hecha-con-grid*/
+
+.proyects__grid {
+  display: grid;
+  height: auto;
+  grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img5";
+  gap: 10px;
+}
+
+.proyects__item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.proyects__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.proyects__item {
+  &:nth-of-type(1) {
+    grid-area: img1;
+  }
+
+  &:nth-of-type(2) {
+    grid-area: img2;
+  }
+
+  &:nth-of-type(3) {
+    grid-area: img3;
+  }
+
+  &:nth-of-type(4) {
+    grid-area: img4;
+  }
+
+  &:nth-of-type(5) {
+    grid-area: img5;
+  }
+}
+
+.proyects__hover {
+  position: absolute;
+  background: #dc143c8c;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #ffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(100%);
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+}
+
+.proyects__item:hover .proyects__hover {
+  transform: translateX(0%);
+}
+
+.proyects__icon {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/*Contacto-pagina*/
+
+.contacto {
+  background: #f2f2f2;
+  width: 100%;
+  height: 650px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__title {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 800;
+  color: $color-primario;
+}
+
+form {
+  background: #ffff;
+  width: 90%;
+  padding: 10px 0;
+  border-radius: 10px;
+  box-shadow: #F1F1F1;
+  max-width: 400px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input__form, .grupo__textarea {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $color-primario;
+  resize: none;
+}
+
+.input__form:focus, .grupo__textarea:focus {
+  outline: none;
+  color: #5e5d5d;
+}
+
+.input__form:focus ~ label, .grupo__textarea:focus ~ label {
+  color: $color-primario;
+}
+
+.btn {
+  background: $color-primario;
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+
+/*Para-la-pagina-about/sobre-mi*/
+
+.about__imagen {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 20px;
+
+  &:hover {
+    box-shadow: 10px 10px 10px 0px rgba(58, 127, 255, 0.336);
+    border-radius: 20px;
+    transform: scaleX(1.1);
+    transition: 1s;
+  }
+}
+
+/*Animaciones-para-about*/
