@@ -1,0 +1,71 @@
+@import "mixin";
+/*Contacto-pagina*/
+
+.contacto {
+    background: #f2f2f2;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form__title {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+    color:map-get($variantes, $color-primario);
+  }
+  
+  form {
+    background: #ffff;
+    width: 90%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: #F1F1F1;
+    max-width: 400px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input__form {
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid map-get($variantes, $color-primario);
+    resize: none;
+  }
+  
+  .grupo__textarea {
+      @include input;
+  }
+
+  .input__form:focus, .grupo__textarea:focus {
+    outline: none;
+    color: #5e5d5d;
+  }
+  
+  .input__form:focus ~ label, .grupo__textarea:focus ~ label {
+    color: map-get($variantes, $color-primario);
+  }
+  
+  .btn {
+    background: map-get($variantes, $color-primario);
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+  }

@@ -1,27 +1,4 @@
-/*Funciones-generales-para-uso*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/*Configuración*/
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 80px 0;
-  max-width: 1200px;
-}
-
 /*media-index-start*/
 @media (max-width: 838px) {
   body {
@@ -278,7 +255,7 @@ body {
 
 /*end-id-media-pages*/
 /* header-index*/
-.hero {
+.hero, .hero__hobbie {
   height: 100vh;
   background-image: linear-gradient(135deg, rgba(102, 126, 234, 0.4941176471) 0%, rgba(118, 75, 162, 0.5960784314) 100%), url(../assets/phel.jpg);
   background-repeat: no-repeat;
@@ -290,16 +267,10 @@ body {
 
 /*header-hobbie*/
 .hero__hobbie {
-  height: 100vh;
   background-image: linear-gradient(135deg, rgba(102, 126, 234, 0.4941176471) 0%, rgba(118, 75, 162, 0.5960784314) 100%), url(../assets/corejj.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  position: relative;
 }
 
-.hero .container .hero__hobbie {
+.hero .container .hero__hobbie, .hero__hobbie .container .hero__hobbie {
   padding: 0;
 }
 
@@ -444,6 +415,21 @@ body {
   transition: 2s;
 }
 
+/*Para-la-pagina-about/sobre-mi*/
+.about__imagen {
+  width: 15rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.about__imagen:hover {
+  box-shadow: 10px 10px 10px 0px rgba(58, 127, 255, 0.336);
+  border-radius: 20px;
+  transform: scaleX(1.1);
+  transition: 1s;
+}
+
+/*Animaciones-para-about*/
 /*animacion-para-index-*/
 /*Para-la-pagina-hobbie*/
 .about__hobbie {
@@ -573,7 +559,19 @@ form {
   align-items: center;
 }
 
-.input__form, .grupo__textarea {
+.input__form {
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #667eea;
+  resize: none;
+}
+
+.grupo__textarea {
   background: none;
   color: #c6c6c6;
   font-size: 18px;
@@ -607,20 +605,27 @@ form {
   cursor: pointer;
 }
 
-/*Para-la-pagina-about/sobre-mi*/
-.about__imagen {
-  width: 15rem;
-  height: 15rem;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.about__imagen:hover {
-  box-shadow: 10px 10px 10px 0px rgba(58, 127, 255, 0.336);
-  border-radius: 20px;
-  transform: scaleX(1.1);
-  transition: 1s;
+/*Funciones-generales-para-uso*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*Animaciones-para-about*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 80px 0;
+  max-width: 1200px;
+}
 
 /*# sourceMappingURL=styles.css.map */

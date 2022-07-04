@@ -1,7 +1,7 @@
 /*footer*/
 
 .footer {
-    background: $color-primario;
+    background: map-get($variantes, $color-primario);
     margin-top: 20px;
   }
   

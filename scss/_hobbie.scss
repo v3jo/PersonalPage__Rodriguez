@@ -1,0 +1,35 @@
+@import "vars";
+
+/*animacion-para-index-*/
+/*Para-la-pagina-hobbie*/
+
+.about__hobbie {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .about__instagram {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 30px 0 0;
+  }
+  
+  .about__twitter {
+    width: 90%;
+    height: auto;
+    margin: 0 30px 0 0;
+  }
+  
+  .about__titulo {
+    color:map-get($variantes, $color-primario);
+    text-align: center;
+  }
+  
+  .header__title {
+    text-align: center;
+    font-size: 3.2rem;
+    color:map-get($variantes, $color-primario);
+  }

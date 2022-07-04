@@ -1,0 +1,111 @@
+@import "vars";
+/*about*/
+/*Primera-section*/
+
+.presentation {
+    text-align: center;
+    margin-top: 10px;
+    padding-top: 0;
+  }
+  
+  .presentation__picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .presentation__titule {
+    color: map-get($variantes, $color-primario);
+    margin-bottom: 20px;
+  }
+  
+  .presentation__parrafo {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .presentation__parrafo--bold {
+    font-weight: bold;
+  }
+  
+  .presentation__parrafo--cta {
+    text-decoration: none;
+    color:map-get($variantes, $color-primario);
+    font-weight: bold;
+  }
+  
+  .presentation--cta:hover {
+    color: #4c5daa;
+  }
+  
+  .presentation__button {
+    display: inline-block;
+    margin-top: 30px;
+    background:map-get($variantes, $color-primario);
+    text-decoration: none;
+    color: #ffff;
+    padding: 20px 40px;
+    border-radius: 40px;
+  
+    &:hover {
+      color: #e4e9ff7e;
+    }
+  }
+  
+  /*Segunda-section*/
+  
+  .about {
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .about__titule {
+    color:map-get($variantes, $color-primario);
+    margin-bottom: 20px;
+  }
+  
+  .about__parrafo {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+  }
+  
+  .about__parrafo--bold {
+    font-weight: bold;
+  }
+  
+  .about__figure {
+    text-align: center;
+  }
+  
+  .about__img {
+    max-width: 80%;
+  
+    &:hover {
+      transform: scaleX(1.1);
+      transition: 2s;
+    }
+  }
+/*Para-la-pagina-about/sobre-mi*/
+
+.about__imagen {
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 20px;
+  
+    &:hover {
+      box-shadow: 10px 10px 10px 0px rgba(58, 127, 255, 0.336);
+      border-radius: 20px;
+      transform: scaleX(1.1);
+      transition: 1s;
+    }
+  }
+  
+  /*Animaciones-para-about*/
