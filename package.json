@@ -1,7 +1,7 @@
 {
   "name": "repositorio__local",
   "version": "1.0.0",
-  "description": "",
+  "description": "Esta es una pagina web creada por Rodriguez German en el curso de CoderHouse-DesarrolloWeb. Con el fín de crear una propia web personal y usarla de portfolio y/o otros fines.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
