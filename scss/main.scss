@@ -1,37 +1,14 @@
-@import "vars";
-@import "fonts";
-@import "media";
-@import "navBar";
-@import "footer";
-@import "id";
-@import "header";
-@import "wave";
-@import "about";
-@import "hobbie";
-@import "proyects";
-@import "contacto";
-@import "mixin";
+@import "vars/vars";
+@import "partials/fonts";
+@import "partials/media";
+@import "partials/navBar";
+@import "partials/footer";
+@import "vars/id";
+@import "partials/header";
+@import "vars/wave";
+@import "partials/about";
+@import "partials/hobbie";
+@import "partials/proyects";
+@import "partials/contacto";
+@import "vars/mixin";
 
-/*Funciones-generales-para-uso*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 80px 0;
-  max-width: 1200px;
-}  

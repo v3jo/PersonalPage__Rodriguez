@@ -1,0 +1,37 @@
+/*id-media-index*/
+
+#header {
+    grid-area: header;
+  }
+  
+  #centro {
+    grid-area: main;
+  }
+  
+  #pie {
+    grid-area: footer;
+  }
+  
+  /*id-media-pages*/
+  
+  #nav__id {
+    grid-area: nav;
+  }
+  
+  #header {
+    grid-area: header;
+  }
+  
+  #centro__id {
+    grid-area: main;
+  }
+  
+  #pie {
+    grid-area: pie;
+  }
+  
+  #pie__nav {
+    grid-area: pie__nav;
+  }
+  
+  /*end-id-media-pages*/
