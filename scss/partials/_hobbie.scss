@@ -4,11 +4,15 @@
 /*Para-la-pagina-hobbie*/
 
 .about__hobbie {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 0 0;
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+
   
   .about__instagram {
     width: 90%;
